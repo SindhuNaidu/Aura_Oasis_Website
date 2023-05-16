@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Buy Website Project</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-left">
+        <img src="./Logo.png">
+
+        <a href="#" class="menu-btn">Menu</a>
+
+        <div class="menu-content">
+          <a href="deals.html">Deals</a>
+          <a href="support.html">Support &amp; Services</a>
+          <a href="brands.html">Brands</a>
+          <a href="featured.html">Featured</a>
+        </div>
+      </div>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="What can we help you find today?" name="search">
+          <button id="searching" type="submit"><i class="fas fa-search"></i></button>
+
+        </form>
+      </div>
+      <div class="navbar-right">
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Aiea</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const menuContent = document.querySelector('.menu-content');
+
+      menuBtn.addEventListener('click', () => {
+        menuContent.classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>
